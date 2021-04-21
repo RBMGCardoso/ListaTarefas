@@ -37,11 +37,11 @@
                         <form method="post" action="{{ route('guardarTask') }}">
                         @csrf
                             <strong>Tarefa</strong>
-                            <input type="text" class="form-control mb-3" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                            <input type="text" class="form-control mb-3" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required>
                             <strong>Descrição</strong>
-                            <textarea class="form-control mb-3" name="description"></textarea>
+                            <textarea class="form-control mb-3" name="description" required></textarea>
                             <strong>Data Limite</strong>
-                            <input type="date" class="form-control mb-3" name="finish_date">
+                            <input type="date" class="form-control mb-3" name="finish_date" required>
 
                             <div class="d-flex justify-content-end">
                                 <button type="submit" class="btn btn-light border border-2 ">Adicionar</button>
