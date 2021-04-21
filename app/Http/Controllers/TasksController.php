@@ -12,8 +12,8 @@ class TasksController extends Controller
     {
         $req->validate([
             'name' => 'required',
-            'finish_date' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'finish_date' => 'required'
         ],
         [
             'name.required' => "Por favor adicione um nome à tarefa!",
