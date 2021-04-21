@@ -39,7 +39,7 @@
                             <strong>Tarefa</strong>
                             <input type="text" class="form-control mb-3" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                             <strong>Descrição</strong>
-                            <textarea class="form-control mb-3 text-wrap" name="description"></textarea>
+                            <textarea class="form-control mb-3" name="description"></textarea>
                             <strong>Data Limite</strong>
                             <input type="date" class="form-control mb-3" name="finish_date">
 
@@ -76,8 +76,10 @@
 
                         <li class="list-group-item">
                             <div class="row">
-                                <div class="col">
-                                    {{ $tarefa->description }} 
+                                <div class="col-auto text-break">
+                                    <div class="text-wrap">
+                                        {{ $tarefa->description }} 
+                                    </div>
                                 </div>
 
                                 <div class="col d-flex justify-content-end align-items-end">
