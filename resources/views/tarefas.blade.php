@@ -37,9 +37,9 @@
                         <form method="post" action="{{ route('guardarTask') }}">
                         @csrf
                             <strong>Tarefa</strong>
-                            <input type="text" class="form-control mb-3" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required pattern=".*\S+.*" title="Este campo é obrigatório!">
+                            <input type="text" class="form-control mb-3" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" required pattern=".*\S+.*" placeholder="Nome da tarefa">
                             <strong>Descrição</strong>
-                            <textarea class="form-control mb-3" name="description" required pattern=".*\S+.*" title="Este campo é obrigatório!"></textarea>
+                            <textarea class="form-control mb-3" name="description" required pattern=".*\S+.*" placeholder="Breve descrição sobre a tarefa"></textarea>
                             <strong>Data Limite</strong>
                             <input type="date" class="form-control mb-3" name="finish_date" required >
 
