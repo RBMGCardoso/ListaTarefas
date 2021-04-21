@@ -35,7 +35,7 @@
                     <div class="card-body user-select-none">
                         <h5 class="card-title bold-700 pb-3 mb-3 border-bottom text-center">Nova tarefa</h5>
                         <form method="post" action="{{ route('guardarTask') }}">
-                        {{ csrf_field() }}
+                        @csrf
                             <strong>Tarefa</strong>
                             <input type="text" class="form-control mb-3" name="name" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
                             <strong>Descrição</strong>
