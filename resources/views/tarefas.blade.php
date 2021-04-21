@@ -64,7 +64,7 @@
                     <ul class="list-group mb-4">
                         <li class="list-group-item active">
                             <div class="row">
-                                <div class="col"> 
+                                <div class="col-auto text-break"> 
                                     {{ $tarefa->name }}
                                 </div>
 
