@@ -86,8 +86,7 @@
                                     <a href="{{ route('deleteTask', $tarefa->id) }}" class="btn btn-danger" style="height: 40px">Eliminar</a>
                                 </div>
                             </div>
-                        </li>
-                        
+                        </li>                       
                     </ul>
                 @endforeach
             </div>

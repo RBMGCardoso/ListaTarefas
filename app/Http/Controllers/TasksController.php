@@ -44,6 +44,7 @@ class TasksController extends Controller
 
     public function removeTask(Task $task)
     {
+
         $task->delete();
       
         return redirect('/');
